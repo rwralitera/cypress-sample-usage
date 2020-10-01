@@ -1,7 +1,7 @@
 {
     "reporter": "mochawesome",
     "reporterOptions": {
-        "reportDir": "results",
+        "reportDir": "cypress-sample-usage/results",
         "overwrite": false,
         "html": false,
         "json": true

@@ -11,8 +11,8 @@ orbs:
         - run: ls -la
         - run: npm install
         - run: npx cypress run
-        # - store_test_results:
-        #     path: cypress/videos
+        - store_test_results:
+            path: results/result.xml
         - store_artifacts:
             path: cypress/videos
 

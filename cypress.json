@@ -1,7 +1,9 @@
 {
-    "reporter": "junit",
+    "reporter": "mochawesome",
     "reporterOptions": {
-        "mochaFile": "results/result.xml",
-        "toConsole": true
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
     }
 }

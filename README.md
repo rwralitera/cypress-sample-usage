@@ -1,4 +1,9 @@
-# cypress
+
+[![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
+
+
+# cypress-sample-usage [![CircleCI](https://circleci.com/gh/rwralitera/cypress-sample-usage.svg?style=svg)](https://circleci.com/gh/rwralitera/cypress-sample-usage)
+
 This is a sample project showing the implementation and usage of Cypress with some tips and best practices
 
 ## Installation
@@ -16,7 +21,6 @@ $ npm install
 
 It uses a number of dependencies to work properly:
 
-* [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 * [cypress webpack-preprocessor](https://www.npmjs.com/package/@cypress/webpack-preprocessor) - Cypress preprocessor for bundling JavaScript via webpack.
 * [eslint](https://www.npmjs.com/package/eslint) - a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 * [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) - This package provides Airbnb's .eslintrc as an extensible shared config.

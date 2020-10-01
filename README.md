@@ -38,5 +38,5 @@ $ npx cypress run -b chrome -s "cypress/integration/examples/*.js"
 ```
   - Run a specific test file
 ```sh
-$ npx cypress run -s CypressOctober/cypress/integration/InstantProjectFR/1BorrowerInstantProject.js -b chrome --headless
+$ npx cypress run -s cypress/integration/examples/actions.spec.js -b chrome --headless
 ```

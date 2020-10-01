@@ -18,6 +18,6 @@ orbs:
 
 workflows:
   version: 2
-  build_and_test:
+  node-tests:
     jobs:
       - test

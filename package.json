@@ -1,0 +1,30 @@
+{
+  "name": "cypress-sample-usage",
+  "version": "1.0.0",
+  "description": "This is a sample project showing the implementation and usage of Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwralitera/cypress-sample-usage.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Rija William RALITERA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwralitera/cypress-sample-usage/issues"
+  },
+  "homepage": "https://github.com/rwralitera/cypress-sample-usage#readme",
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^5.4.6",
+    "cypress": "^4.12.1",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}

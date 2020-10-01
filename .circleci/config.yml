@@ -25,6 +25,6 @@ jobs:
             - ~/.cache
       - run: $(npm bin)/cypress run
       - store_test_results:
-          path: cypress/results/result.xml
+          path: cypress/results
       - store_artifacts:
           path: cypress/videos

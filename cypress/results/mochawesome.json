@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-10-01T22:11:44.468Z",
-    "end": "2020-10-01T22:11:53.082Z",
-    "duration": 8614,
+    "start": "2020-10-01T22:26:43.886Z",
+    "end": "2020-10-01T22:26:53.527Z",
+    "duration": 9641,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5bc1ce18-f0a5-4a86-b878-d541a9926755",
+      "uuid": "a48ee2c0-82c6-469d-a45f-14e48cea3eed",
       "title": "",
       "fullFile": "cypress\\integration\\examples\\actions.spec.js",
       "file": "cypress\\integration\\examples\\actions.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2f9f5dd4-9949-48cc-9f20-712b2cd2725c",
+          "uuid": "f32944a8-dff3-4039-995c-0261ce723cdf",
           "title": "Actions",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": ".type() - type into a DOM element",
               "fullTitle": "Actions .type() - type into a DOM element",
               "timedOut": null,
-              "duration": 6054,
+              "duration": 6755,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// https://on.cypress.io/type\ncy.get('.action-email').type('fake@email.com').should('have.value', 'fake@email.com') // .type() with special character sequences\n.type('{leftarrow}{rightarrow}{uparrow}{downarrow}').type('{del}{selectall}{backspace}') // .type() with key modifiers\n.type('{alt}{option}') //these are equivalent\n.type('{ctrl}{control}') //these are equivalent\n.type('{meta}{command}{cmd}') //these are equivalent\n.type('{shift}') // Delay each keypress by 0.1 sec\n.type('slow.typing@email.com', {\n  delay: 100\n}).should('have.value', 'slow.typing@email.com');\ncy.get('.action-disabled') // Ignore error checking prior to type\n// like whether the input is visible or disabled\n.type('disabled error checking', {\n  force: true\n}).should('have.value', 'disabled error checking');",
               "err": {},
-              "uuid": "139a61a6-fd2c-49de-be2e-566c0b7e9ab3",
-              "parentUUID": "2f9f5dd4-9949-48cc-9f20-712b2cd2725c",
+              "uuid": "93b4b42e-03ce-420b-b294-d955c26651f3",
+              "parentUUID": "f32944a8-dff3-4039-995c-0261ce723cdf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "139a61a6-fd2c-49de-be2e-566c0b7e9ab3"
+            "93b4b42e-03ce-420b-b294-d955c26651f3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6054,
+          "duration": 6755,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

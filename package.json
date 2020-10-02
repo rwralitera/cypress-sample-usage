@@ -22,9 +22,12 @@
   "dependencies": {
     "@cypress/webpack-preprocessor": "^5.4.6",
     "cypress": "^4.12.1",
+    "cypress-multi-reporters": "^1.4.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-cypress": "^2.11.1",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-plugin-import": "^2.22.0",
+    "mocha-junit-reporters": "^1.23.6",
+    "mochawesome": "^6.1.1"
   }
 }

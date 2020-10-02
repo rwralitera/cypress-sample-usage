@@ -24,7 +24,9 @@ jobs:
             - ~/.npm
             - ~/.cache
       - run: $(npm bin)/cypress run
-      - store_test_results:
-          path: cypress/results
+      - store_test_results:  
+          path: cypress/reports/junit
       - store_artifacts:
           path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots

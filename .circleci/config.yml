@@ -23,7 +23,7 @@ jobs:
           paths:
             - ~/.npm
             - ~/.cache
-      - run: $(npm bin)/--reporter mocha-multi-reporters --reporter-options configFile=config.json
+      - run: $(npm bin)/cypress run --reporter mocha-multi-reporters --reporter-options configFile=config.json
       - run: npx mochawesome-merge --reportDir multiple-results/results > mochawesome.json || true
       - run: npx mochawesome-report-generator mochawesome.json || true
       - run: 

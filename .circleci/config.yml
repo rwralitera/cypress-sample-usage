@@ -26,11 +26,7 @@ jobs:
       - run: $(npm bin)/cypress run
       - store_test_results:  
           path: cypress/reports/junit
-      - run: 
-          name: "Merge junit xml to json file"
-          command: npx mochawesome-merge --reportDir cypress/reports/mocha > mochawesome.json
-      - run:
-          name: "Generate a single HTML Report"
-          command: npx mochawesome-report-generator mochawesome.json
       - store_artifacts:
-          path: cypress
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots

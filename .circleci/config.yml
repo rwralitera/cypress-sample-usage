@@ -23,8 +23,24 @@ jobs:
           paths:
             - ~/.npm
             - ~/.cache
-      - run: $(npm bin)/cypress run
+      - run: $(npm bin)/--reporter mocha-multi-reporters --reporter-options configFile=config.json
+      - run: npx mochawesome-merge --reportDir multiple-results/results > mochawesome.json || true
+      - run: npx mochawesome-report-generator mochawesome.json || true
+      - run: 
+          name: "Merge junit xml to json file"
+          command: npx mochawesome-merge --reportDir multiple-results/results > mochawesome.json
+      - run:
+          name: "Generate a single HTML Report"
+          command: npx mochawesome-report-generator mochawesome.json
       - store_test_results:
-          path: cypress/results
+          path: multiple-results/
+      - store_artifacts:
+          path: mochawesome-report
+      - store_test_results:
+          path: multiple-results
       - store_artifacts:
           path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
+      - store_artifacts:
+          path: cypress/integration

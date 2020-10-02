@@ -26,6 +26,9 @@ It uses a number of dependencies to work properly:
 * [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) - This package provides Airbnb's .eslintrc as an extensible shared config.
 * [eslint-plugin-cypress](https://www.npmjs.com/package/eslint-plugin-cypress) - An ESLint plugin for your Cypress tests.
 * [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) - plugin intends to support linting of ES2015+ (ES6+) import/export syntax, and prevent issues with misspelling of file paths and import names.
+* [cypress-multi-reporters](https://www.npmjs.com/package/https://www.npmjs.com/package/cypress-multi-reporters) - Generate multiple mocha reports in a single mocha execution
+* [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) - Produces JUnit-style XML test results.
+* [mochawesome](https://www.npmjs.com/package/mochawesome) - a custom reporter for use with the Javascript testing framework, mocha.
 
 ## Run
   - Run tests using the cypress GUI

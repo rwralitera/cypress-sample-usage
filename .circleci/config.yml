@@ -29,5 +29,5 @@ jobs:
       - store_test_results:  
           path: cypress/reports/mocha
       - store_artifacts:
-          path: cypress/videos
+          path: cypress
           

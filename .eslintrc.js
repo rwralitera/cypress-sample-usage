@@ -12,11 +12,14 @@ module.exports = {
     'max-nested-callbacks': [1, 5],
     'no-else-return': 0,
     'no-multi-spaces': 1,
-    'no-multiple-empty-lines': ['error', {
-      max: 1,
-      maxEOF: 0,
-      maxBOF: 0,
-    }],
+    'no-multiple-empty-lines': [
+      'error',
+      {
+        max: 1,
+        maxEOF: 0,
+        maxBOF: 0,
+      },
+    ],
     'no-param-reassign': 0,
     'no-plusplus': 0,
     'no-shadow': 0,
@@ -33,13 +36,31 @@ module.exports = {
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }, { blankLine: 'always', prev: '*', next: 'throw' }],
     'no-mixed-operators': 0,
     'no-await-in-loop': 0,
+    'prettier/prettier': 'error',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   env: {
     node: true,
-    mongo: true
+    browser: true,
+    es2021: true,
   },
   globals: {
-    print: true
+    print: true,
   },
-  extends: ['airbnb-base', 'plugin:cypress/recommended']
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint', 'prettier', 'import'],
+  extends: ['airbnb-base', 'plugin:cypress/recommended', 'prettier', 'plugin:import/errors', 'plugin:import/warnings', 'plugin:import/typescript'],
 };

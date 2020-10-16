@@ -1,0 +1,17 @@
+tslint.json
+tsconfig.json
+package.json
+README.md
+package-lock.json
+yarn.lock
+angular.json
+.prettierrc.json
+.stylelintrc
+tsconfig.*.json
+
+dist
+e2e
+coverage
+node_modules
+tmp
+temp

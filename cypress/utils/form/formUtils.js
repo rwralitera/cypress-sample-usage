@@ -14,5 +14,4 @@ export function loginWith(email, password) {
   waitForAPI();
 }
 
-export function logout() {
-}
+export function logout() {}
